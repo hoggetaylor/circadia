@@ -1,3 +1,8 @@
+
+//! This module provides types for representing
+//! a position on the globe.
+
+/// Represents a position on the earth.
 #[derive(Debug, Clone)]
 pub struct GlobalPosition {
     latitude: f64,
@@ -5,9 +10,10 @@ pub struct GlobalPosition {
     lng_hour: f64
 }
 
-/// Represents a position on the earth.
 impl GlobalPosition {
 
+    /// Create a new GlobalPosition at the
+    /// given latitude and longitude
     pub fn at(lat: f64, lng: f64) -> Self {
         GlobalPosition {
             latitude: lat,

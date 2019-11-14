@@ -1,3 +1,7 @@
+
+//! This module provides types for representing
+//! exact sunrise/sunset events.
+
 use std::fmt;
 use std::cmp::Ordering;
 
