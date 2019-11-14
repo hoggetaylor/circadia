@@ -3,10 +3,12 @@
 //! the sunrise and sunset on arbitrary dates at any position
 //! on the earth.
 
-pub mod event;
-pub mod pos;
+mod event;
+mod pos;
 mod algorithm;
 mod iter;
 
+pub use event::{ Event, Zenith, SunEvent };
+pub use pos::GlobalPosition;
 pub use algorithm::time_of_event;
 pub use iter::{ SunEvents, ForecastedSunEvents, HistoricSunEvents };

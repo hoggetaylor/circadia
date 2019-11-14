@@ -1,7 +1,4 @@
 
-//! This module provides types for representing
-//! exact sunrise/sunset events.
-
 use std::fmt;
 use std::cmp::Ordering;
 
@@ -71,7 +68,7 @@ impl fmt::Display for Event {
     }
 }
 
-// Defines a sunset or sunrise at some angle above the horizon (the zenith).
+/// Defines a sunset or sunrise at some angle above the horizon (the zenith).
 #[derive(Debug, Eq, PartialEq, Copy, Clone)]
 pub struct SunEvent {
     pub zenith: Zenith,

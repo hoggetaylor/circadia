@@ -2,7 +2,16 @@
 authors = ["Taylor Hogge <hoggetaylor@gmail.com>"]
 edition = "2018"
 name = "circadia"
-version = "0.1.0"
+version = "0.0.1"
+description = "Compute sunrise/sunset times"
+documentation = "https://docs.rs/circadia"
+homepage = "https://github.com/hoggetaylor/circadia"
+repository = "https://github.com/hoggetaylor/circadia"
+readme = "README.md"
+keywords = ["sunrise", "sunset"]
+license = "MIT"
+license-file = "LICENSE.txt"
+maintenance = { status = "experimental" }
 
 [dependencies]
 chrono = "0.4.9"
