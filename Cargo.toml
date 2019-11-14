@@ -10,7 +10,6 @@ repository = "https://github.com/hoggetaylor/circadia"
 readme = "README.md"
 keywords = ["sunrise", "sunset"]
 license = "MIT"
-license-file = "LICENSE.txt"
 maintenance = { status = "experimental" }
 
 [dependencies]
