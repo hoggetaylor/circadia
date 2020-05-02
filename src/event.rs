@@ -19,7 +19,7 @@ impl Zenith {
         use Zenith::*;
         match self {
             Golden => 80.0,
-            Official => 90.0,
+            Official => 90.8333333333333, // 90° 50'
             Civil => 96.0,
             Nautical => 102.0,
             Astronomical => 108.0
