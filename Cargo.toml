@@ -2,7 +2,7 @@
 authors = ["Taylor Hogge <hoggetaylor@gmail.com>"]
 edition = "2018"
 name = "circadia"
-version = "0.0.2"
+version = "0.1.0"
 description = "Compute sunrise/sunset times"
 documentation = "https://docs.rs/circadia"
 homepage = "https://github.com/hoggetaylor/circadia"
