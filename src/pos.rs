@@ -36,4 +36,17 @@ impl GlobalPosition {
         self.lng_hour
     }
 
+    /// Returns a [FixedOffset] timezone calculated from
+    /// this location's longitude
+    ///
+    /// [FixedOffset]: chrono::FixedOffset
+    pub fn lng_timezone(&self) -> chrono::FixedOffset {
+        const SECS_IN_HOUR: f64 = 3600_f64;
+        if self.lng() >= 0_f64 {
+            chrono::FixedOffset::east((self.lng_hour.abs() * SECS_IN_HOUR) as i32)
+        } else {
+            chrono::FixedOffset::west((self.lng_hour.abs() * SECS_IN_HOUR) as i32)
+        }
+    }
+
 }
